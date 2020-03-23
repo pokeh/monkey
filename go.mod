@@ -1,3 +1,3 @@
 module github.com/pokeh/monkey
 
-go 1.13
+go 1.14
