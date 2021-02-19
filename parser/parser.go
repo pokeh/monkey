@@ -13,12 +13,12 @@ import (
 const (
 	_ int = iota
 	LOWEST
-	EQUALS     // ==
-	LESSGRATER // > or <
-	SUM        // +
-	PRODUCT    // *
-	PREFIX     // -X or !X
-	CALL       // myFunction(X)
+	EQUALS      // ==
+	LESSGREATER // > or <
+	SUM         // +
+	PRODUCT     // *
+	PREFIX      // -X or !X
+	CALL        // myFunction(X)
 )
 
 type (
@@ -246,8 +246,8 @@ func (p *Parser) registerInfix(tokenType token.TokenType, fn infixParseFn) {
 var precedences = map[token.TokenType]int{
 	token.EQ:       EQUALS,
 	token.NOT_EQ:   EQUALS,
-	token.LT:       LESSGRATER,
-	token.GT:       LESSGRATER,
+	token.LT:       LESSGREATER,
+	token.GT:       LESSGREATER,
 	token.PLUS:     SUM,
 	token.MINUS:    SUM,
 	token.SLASH:    PRODUCT,
