@@ -1,1 +1,1 @@
-Next: 2.8 Boolean Literals
+Next: 2.8 Grouped Expressions
